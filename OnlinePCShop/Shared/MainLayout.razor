@@ -1,0 +1,41 @@
+﻿@inherits LayoutComponentBase
+
+<PageTitle>OnlinePCShop</PageTitle>
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <main>
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+
+<Footer />
+
+<style>
+    .page {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .sidebar {
+        flex: 0 0 250px;
+    }
+
+    main {
+        flex: 1;
+    }
+
+    article.content {
+        flex: 1;
+    }
+
+    footer.footer {
+        margin-top: auto;
+    }
+</style>

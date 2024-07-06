@@ -1,0 +1,100 @@
+﻿@page "/admin"
+@using OnlinePCShop.Models
+@inject OnlinePCShop.Services.AuthService AuthService
+@inject NavigationManager Navigation
+@inject OnlinePCShop.Services.OrderService OrderService
+
+@if (!AuthService.IsAdmin())
+{
+    <p>Bạn không có quyền truy cập trang này. Vui lòng <NavLink href="/adminlogin">đăng nhập</NavLink> với tài khoản admin.</p>
+}
+else
+{
+    <h3>Quản lý Đơn hàng</h3>
+
+    @if (orders.Any())
+    {
+        <h4>Đơn hàng chờ xử lý</h4>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Mã đơn hàng</th>
+                    <th>Tên khách hàng</th>
+                    <th>Email</th>
+                    <th>Địa chỉ</th>
+                    <th>Số điện thoại</th>
+                    <th>Ngày đặt</th>
+                    <th>Trạng thái</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var order in orders)
+                {
+                    <tr>
+                        <td>@order.OrderId</td>
+                        <td>@order.CustomerName</td>
+                        <td>@order.CustomerEmail</td>
+                        <td>@order.CustomerAddress</td>
+                        <td>@order.CustomerPhoneNumber</td>
+                        <td>@order.OrderDate.ToString("dd/MM/yyyy")</td>
+                        <td>@order.Status</td>
+                        <td>
+                            <button class="btn btn-primary" @onclick="() => ProcessOrder(order.OrderId)">Xác nhận</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+    @if (processedOrders.Any())
+    {
+        <h4>Lịch sử đơn hàng đã xử lý</h4>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Mã đơn hàng</th>
+                    <th>Tên khách hàng</th>
+                    <th>Email</th>
+                    <th>Địa chỉ</th>
+                    <th>Số điện thoại</th>
+                    <th>Ngày đặt</th>
+                    <th>Trạng thái</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var order in processedOrders)
+                {
+                    <tr>
+                        <td>@order.OrderId</td>
+                        <td>@order.CustomerName</td>
+                        <td>@order.CustomerEmail</td>
+                        <td>@order.CustomerAddress</td>
+                        <td>@order.CustomerPhoneNumber</td>
+                        <td>@order.OrderDate.ToString("dd/MM/yyyy")</td>
+                        <td>@order.Status</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+}
+
+@code {
+    private List<Order> orders = new List<Order>();
+    private List<Order> processedOrders = new List<Order>();
+
+    protected override void OnInitialized()
+    {
+        orders = OrderService.GetAllOrders();
+        processedOrders = OrderService.GetProcessedOrders();
+    }
+
+    private void ProcessOrder(int orderId)
+    {
+        OrderService.ProcessOrder(orderId);
+        orders = OrderService.GetAllOrders();
+        processedOrders = OrderService.GetProcessedOrders();
+    }
+}

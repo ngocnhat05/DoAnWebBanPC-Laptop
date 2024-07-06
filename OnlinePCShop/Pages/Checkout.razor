@@ -1,0 +1,86 @@
+﻿@page "/checkout"
+@inject OnlinePCShop.Services.CartService CartService
+
+<div class="checkout-container">
+    <h2 class="section-title">Xác nhận Thanh toán</h2>
+
+    @if (CartService.PurchasedItems.Any())
+    {
+        <div class="checkout-summary">
+            <h3>Thông tin đơn hàng:</h3>
+            @foreach (var item in CartService.PurchasedItems)
+            {
+                <div class="checkout-item">
+                    <h5 class="product-name">@item.Name</h5>
+                    <p class="product-price">Giá: @item.Price.ToString("C")</p>
+                    <p class="product-quantity">Số lượng: @item.Quantity</p>
+                    <p class="total-price">Tổng tiền: @(item.Price * item.Quantity).ToString("C")</p>
+                </div>
+            }
+            <h3>Tổng cộng: @CartService.PurchasedItems.Sum(item => item.Price * item.Quantity).ToString("C")</h3>
+        </div>
+
+        <div class="customer-info">
+            <h4>Thông tin khách hàng:</h4>
+            <p>Tên: @CartService.Customer.Name</p>
+            <p>Địa chỉ: @CartService.Customer.Address</p>
+            <p>Email: @CartService.Customer.Email</p>
+            <p>Số điện thoại: @CartService.Customer.PhoneNumber</p>
+        </div>
+    }
+    else
+    {
+        <p>Không có sản phẩm nào trong giỏ hàng.</p>
+    }
+</div>
+
+<style>
+    .checkout-container {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1200px;
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-title {
+        font-size: 2em;
+        margin: 20px 0;
+        text-align: center;
+        color: #007bff;
+    }
+
+    .checkout-summary {
+        margin-top: 20px;
+    }
+
+    .checkout-item {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .product-name {
+        font-size: 1.2em;
+        color: #333;
+        margin: 10px 0;
+    }
+
+    .product-price, .product-quantity, .total-price {
+        font-size: 1em;
+        color: #555;
+        margin: 5px 0;
+    }
+
+    .customer-info {
+        margin-top: 20px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+</style>

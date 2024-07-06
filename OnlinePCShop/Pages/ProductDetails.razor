@@ -1,0 +1,79 @@
+﻿@page "/productdetails/{productId:int}"
+@using OnlinePCShop.Models
+@inject OnlinePCShop.Services.ProductService ProductService
+@inject OnlinePCShop.Services.CartService CartService
+@inject NavigationManager Navigation
+
+@code {
+    [Parameter]
+    public int ProductId { get; set; }
+    private Product product;
+    private string notificationMessage;
+    private bool showNotification = false;
+
+    protected override void OnInitialized()
+    {
+        product = ProductService.GetProductById(ProductId);
+    }
+
+    private void AddToCart()
+    {
+        CartService.AddToCart(product);
+        notificationMessage = CartService.NotificationMessage;
+        showNotification = true;
+        StateHasChanged();
+
+        // Tự động ẩn thông báo sau 3 giây
+        Task.Delay(3000).ContinueWith(_ =>
+        {
+            showNotification = false;
+            StateHasChanged();
+        });
+    }
+
+    private void Checkout()
+    {
+        AddToCart(); // Ensure product is added to cart before checkout
+        Navigation.NavigateTo("/cart");
+    }
+}
+
+@if (product != null)
+{
+    <div class="card">
+        <img src="@product.ImageUrl" class="card-img-top product-image" alt="@product.Name">
+        <div class="card-body">
+            <h5 class="card-title">@product.Name</h5>
+            <p class="card-text">@product.Description</p>
+            <p class="card-text">@product.Price.ToString("C")</p>
+            <button class="btn btn-primary" @onclick="AddToCart">Thêm vào giỏ hàng</button>
+            <button class="btn btn-success" @onclick="Checkout">Thanh toán</button>
+        </div>
+    </div>
+    @if (showNotification)
+    {
+        <div class="alert alert-success notification" role="alert">
+            @notificationMessage
+        </div>
+    }
+}
+else
+{
+    <p>Loading...</p>
+}
+
+<style>
+    .product-image {
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .notification {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1050;
+    }
+</style>

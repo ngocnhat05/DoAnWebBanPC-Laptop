@@ -1,0 +1,274 @@
+﻿@page "/cart"
+@using OnlinePCShop.Models
+@inject OnlinePCShop.Services.CartService CartService
+@inject NavigationManager Navigation
+
+<div class="cart-container">
+    <h2 class="section-title">Giỏ hàng của bạn</h2>
+
+    @if (CartService.GetCartItems().Any())
+    {
+        <EditForm Model="@CartService.Customer" OnValidSubmit="ValidateAndCheckout">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+
+            <div class="cart-grid">
+                @foreach (var item in CartService.GetCartItems())
+                {
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <img src="@item.ImageUrl" alt="@item.Name" class="product-image" />
+                        </div>
+                        <div class="cart-item-details">
+                            <h5 class="product-name">@item.Name</h5>
+                            <p class="product-price">@item.Price.ToString("C")</p>
+                            <p class="product-quantity">Số lượng: @item.Quantity</p>
+                        </div>
+                        <div class="cart-item-actions">
+                            <InputCheckbox @bind-Value="item.IsSelected" @onchange="UpdateCartTotal" />
+                            <button class="btn btn-danger" @onclick="() => ConfirmRemoveFromCart(item)">Xóa</button>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            <div class="cart-summary">
+                <h3>Tổng cộng: @cartTotal.ToString("C")</h3>
+                <button type="submit" class="btn btn-primary">Thanh toán</button>
+            </div>
+
+            <div class="customer-info">
+                <h4>Thông tin khách hàng</h4>
+                <div class="form-group">
+                    <label for="name">Tên:</label>
+                    <InputText id="name" class="form-control" @bind-Value="CartService.Customer.Name" />
+                </div>
+                <div class="form-group">
+                    <label for="address">Địa chỉ:</label>
+                    <InputText id="address" class="form-control" @bind-Value="CartService.Customer.Address" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <InputText id="email" class="form-control" @bind-Value="CartService.Customer.Email" />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Số điện thoại:</label>
+                    <InputText id="phone" class="form-control" @bind-Value="CartService.Customer.PhoneNumber" />
+                </div>
+            </div>
+        </EditForm>
+    }
+    else
+    {
+        <p>Giỏ hàng của bạn trống.</p>
+    }
+
+    @if (showConfirmation)
+    {
+        <div class="modal show" style="display: block;" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Xác nhận xóa</h5>
+                        <button type="button" class="close" aria-label="Close" @onclick="CloseConfirmation">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Bạn có chắc chắn muốn xóa sản phẩm này khỏi giỏ hàng?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" @onclick="CloseConfirmation">Hủy</button>
+                        <button type="button" class="btn btn-danger" @onclick="RemoveConfirmedItem">Xóa</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-backdrop show"></div>
+    }
+</div>
+
+<style>
+    .cart-container {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1200px;
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-title {
+        font-size: 2em;
+        margin: 20px 0;
+        text-align: center;
+        color: #007bff;
+    }
+
+    .cart-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .cart-item {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+        .cart-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+    .cart-item-image {
+        width: 100%;
+        background-color: #f8f9fa;
+    }
+
+    .product-image {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+    }
+
+    .cart-item-details {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .product-name {
+        font-size: 1.2em;
+        color: #333;
+        margin: 10px 0;
+    }
+
+    .product-price {
+        font-size: 1em;
+        color: #555;
+        margin: 10px 0;
+    }
+
+    .product-quantity {
+        font-size: 1em;
+        color: #777;
+        margin: 10px 0;
+    }
+
+    .cart-item-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1em;
+        margin: 10px 0;
+        transition: background-color 0.2s;
+        border-radius: 5px;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+    .cart-summary {
+        text-align: right;
+        padding: 20px 0;
+    }
+
+    .customer-info {
+        margin-top: 20px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+</style>
+
+@code {
+    private decimal cartTotal = 0;
+    private bool showConfirmation = false;
+    private Product? itemToRemove;
+
+    protected override void OnInitialized()
+    {
+        UpdateCartTotal();
+    }
+
+    private void ConfirmRemoveFromCart(Product product)
+    {
+        itemToRemove = product;
+        showConfirmation = true;
+    }
+
+    private void RemoveConfirmedItem()
+    {
+        if (itemToRemove != null)
+        {
+            CartService.RemoveFromCart(itemToRemove);
+            itemToRemove = null;
+            showConfirmation = false;
+            UpdateCartTotal();
+        }
+    }
+
+    private void CloseConfirmation()
+    {
+        showConfirmation = false;
+        itemToRemove = null;
+    }
+
+    private void UpdateCartTotal()
+    {
+        cartTotal = CartService.GetTotalPrice();
+        StateHasChanged();
+    }
+
+    private void ValidateAndCheckout()
+    {
+        if (CartService.HasSelectedItems() && IsCustomerInfoValid())
+        {
+            Checkout();
+        }
+        else
+        {
+            // Show an error message or handle validation failure
+        }
+    }
+
+    private bool IsCustomerInfoValid()
+    {
+        var customer = CartService.Customer;
+        return !string.IsNullOrWhiteSpace(customer.Name) &&
+               !string.IsNullOrWhiteSpace(customer.Address) &&
+               !string.IsNullOrWhiteSpace(customer.Email) &&
+               !string.IsNullOrWhiteSpace(customer.PhoneNumber);
+    }
+
+    private void Checkout()
+    {
+        var selectedItems = CartService.GetCartItems().Where(item => item.IsSelected).ToList();
+        CartService.AddPurchasedItems(selectedItems);
+        CartService.ClearCart();
+        Navigation.NavigateTo("/checkout");
+    }
+}

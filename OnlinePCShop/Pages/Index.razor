@@ -1,0 +1,165 @@
+﻿@page "/"
+@using OnlinePCShop.Models
+@inject OnlinePCShop.Services.ProductService ProductService
+
+<div class="container">
+    <header class="header">
+        <h1 class="site-title">Online PC Shop</h1>
+        <p class="site-description">Khám phá những chiếc PC và máy tính xách tay tốt nhất đáp ứng mọi nhu cầu của bạn.</p>
+
+        <div class="search-bar">
+            <input type="text" @bind="searchTerm" placeholder="Tìm kiếm sản phẩm..." class="form-control" />
+            <button @onclick="SearchProducts" class="btn btn-primary">Tìm kiếm</button>
+        </div>
+    </header>
+
+    <h2 class="section-title">Sản phẩm</h2>
+
+    <div class="product-grid">
+        @foreach (var product in filteredProducts)
+        {
+            <div class="product-card">
+                <img src="@product.ImageUrl" alt="@product.Name" class="product-image" />
+                <div class="product-details">
+                    <h5 class="product-name">@product.Name</h5>
+                    <p class="product-price">@product.Price.ToString("C")</p>
+                    <a href="/productdetails/@product.Id" class="btn btn-primary">Chi tiết</a>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 0;
+        color: #333;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    .header {
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    .site-title {
+        font-size: 2.5em;
+        margin: 0;
+    }
+
+    .site-description {
+        font-size: 1.2em;
+        color: #555;
+    }
+
+    .search-bar {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+        .search-bar .form-control {
+            width: 300px;
+        }
+
+    .section-title {
+        font-size: 2em;
+        margin: 20px 0;
+        text-align: center;
+        color: #007bff;
+    }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .product-card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+    .product-image {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        background-color: #f8f9fa;
+    }
+
+    .product-details {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .product-name {
+        font-size: 1.2em;
+        color: #333;
+        margin: 10px 0;
+    }
+
+    .product-price {
+        font-size: 1em;
+        color: #555;
+        margin: 10px 0;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1em;
+        margin: 1px 0;
+        transition: background-color 0.2s;
+        border-radius: 5px;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+</style>
+
+@code {
+    private string searchTerm;
+    private List<Product> products;
+    private List<Product> filteredProducts;
+
+    protected override void OnInitialized()
+    {
+        products = ProductService.GetProducts();
+        filteredProducts = products;
+    }
+
+    private void SearchProducts()
+    {
+        if (string.IsNullOrWhiteSpace(searchTerm))
+        {
+            filteredProducts = products;
+        }
+        else
+        {
+            filteredProducts = products.Where(p => p.Name.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)).ToList();
+        }
+    }
+}

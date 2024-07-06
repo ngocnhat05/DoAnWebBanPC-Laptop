@@ -1,0 +1,104 @@
+﻿@inject OnlinePCShop.Services.AuthService AuthService
+@inject NavigationManager Navigation
+
+<div class="top-row pl-4 navbar navbar-dark">
+    <a class="navbar-brand" href="">OnlinePCShop</a>
+    <button class="navbar-toggler" @onclick="ToggleNavMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
+
+<div class="@navMenuCssClass" @onclick="ToggleNavMenu">
+    <ul class="nav flex-column">
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span> Trang chủ
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="/cart">
+                <span class="oi oi-cart" aria-hidden="true"></span> Giỏ hàng
+            </NavLink>
+        </li>        
+        @if (AuthService.IsLoggedIn())
+        {
+            <li class="nav-item px-3">
+                <span class="nav-link">Xin chào, @AuthService.CurrentUser.Name (@AuthService.CurrentUser.Email)</span>
+            </li>
+            @if (AuthService.IsAdmin())
+            {
+                <li class="nav-item px-3">
+                    <NavLink class="nav-link" href="/admin">
+                        <span class="oi oi-cog" aria-hidden="true"></span> Admin
+                    </NavLink>
+                </li>
+            }
+            <li class="nav-item px-3">
+                <button class="btn btn-link nav-link" @onclick="ConfirmLogout">
+                    <span class="oi oi-account-logout" aria-hidden="true"></span> Đăng xuất
+                </button>
+            </li>
+        }
+        else
+        {
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="/account">
+                    <span class="oi oi-account-login" aria-hidden="true"></span> Tài khoản
+                </NavLink>
+            </li>
+        }
+    </ul>
+</div>
+
+@if (showConfirmation)
+{
+    <div class="modal show" style="display: block;" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Xác nhận đăng xuất</h5>
+                    <button type="button" class="close" aria-label="Close" @onclick="CloseConfirmation">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Bạn có chắc chắn muốn đăng xuất?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" @onclick="CloseConfirmation">Hủy</button>
+                    <button type="button" class="btn btn-danger" @onclick="Logout">Đăng xuất</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop show"></div>
+}
+
+@code {
+    private bool collapseNavMenu = true;
+    private bool showConfirmation = false;
+
+    private string navMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+
+    private void ConfirmLogout()
+    {
+        showConfirmation = true;
+    }
+
+    private void CloseConfirmation()
+    {
+        showConfirmation = false;
+    }
+
+    private void Logout()
+    {
+        AuthService.Logout();
+        CloseConfirmation();
+        Navigation.NavigateTo("/");
+    }
+}

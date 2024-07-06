@@ -1,0 +1,28 @@
+﻿@page "/userlist"
+@using OnlinePCShop.Models
+@inject OnlinePCShop.Services.AuthService AuthService
+
+<h3>Danh sách người dùng</h3>
+
+@if (users != null && users.Any())
+{
+    <ul>
+        @foreach (var user in users)
+        {
+            <li>@user.Name - @user.Email</li>
+        }
+    </ul>
+}
+else
+{
+    <p>Không có người dùng nào.</p>
+}
+
+@code {
+    private List<User> users;
+
+    protected override void OnInitialized()
+    {
+        users = AuthService.GetUsers();
+    }
+}

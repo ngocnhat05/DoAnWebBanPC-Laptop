@@ -1,0 +1,432 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CODE\\OnlinePCShop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|d:\\code\\onlinepcshop\\onlinepcshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|solutionrelative:onlinepcshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|d:\\code\\onlinepcshop\\onlinepcshop\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|solutionrelative:onlinepcshop\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|d:\\code\\onlinepcshop\\onlinepcshop\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|solutionrelative:onlinepcshop\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|d:\\code\\onlinepcshop\\onlinepcshop\\shared\\footer.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|solutionrelative:onlinepcshop\\shared\\footer.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|d:\\code\\onlinepcshop\\onlinepcshop\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|solutionrelative:onlinepcshop\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|d:\\code\\onlinepcshop\\onlinepcshop\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|solutionrelative:onlinepcshop\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|d:\\code\\onlinepcshop\\onlinepcshop\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|solutionrelative:onlinepcshop\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|d:\\code\\onlinepcshop\\onlinepcshop\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|solutionrelative:onlinepcshop\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|d:\\code\\onlinepcshop\\onlinepcshop\\pages\\userlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|solutionrelative:onlinepcshop\\pages\\userlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|d:\\code\\onlinepcshop\\onlinepcshop\\pages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|solutionrelative:onlinepcshop\\pages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|d:\\code\\onlinepcshop\\onlinepcshop\\pages\\productdetails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|solutionrelative:onlinepcshop\\pages\\productdetails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|d:\\code\\onlinepcshop\\onlinepcshop\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|solutionrelative:onlinepcshop\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|d:\\code\\onlinepcshop\\onlinepcshop\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|solutionrelative:onlinepcshop\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|d:\\code\\onlinepcshop\\onlinepcshop\\pages\\checkout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|solutionrelative:onlinepcshop\\pages\\checkout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|d:\\code\\onlinepcshop\\onlinepcshop\\pages\\cart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|solutionrelative:onlinepcshop\\pages\\cart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|d:\\code\\onlinepcshop\\onlinepcshop\\pages\\adminlogin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|solutionrelative:onlinepcshop\\pages\\adminlogin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|d:\\code\\onlinepcshop\\onlinepcshop\\pages\\admin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|solutionrelative:onlinepcshop\\pages\\admin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|d:\\code\\onlinepcshop\\onlinepcshop\\pages\\account.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|solutionrelative:onlinepcshop\\pages\\account.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|d:\\code\\onlinepcshop\\onlinepcshop\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|solutionrelative:onlinepcshop\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|d:\\code\\onlinepcshop\\onlinepcshop\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|solutionrelative:onlinepcshop\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|d:\\code\\onlinepcshop\\onlinepcshop\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|solutionrelative:onlinepcshop\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|d:\\code\\onlinepcshop\\onlinepcshop\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|solutionrelative:onlinepcshop\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|d:\\code\\onlinepcshop\\onlinepcshop\\models\\customerinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|solutionrelative:onlinepcshop\\models\\customerinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|d:\\code\\onlinepcshop\\onlinepcshop\\models\\adminloginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A37EFA50-E66B-4387-BE34-8B6218EF2749}|OnlinePCShop\\OnlinePCShop.csproj|solutionrelative:onlinepcshop\\models\\adminloginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductDetails.razor",
+              "DocumentMoniker": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Pages\\ProductDetails.razor",
+              "RelativeDocumentMoniker": "OnlinePCShop\\Pages\\ProductDetails.razor",
+              "ToolTip": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Pages\\ProductDetails.razor",
+              "RelativeToolTip": "OnlinePCShop\\Pages\\ProductDetails.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEsAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T12:31:09.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Register.razor",
+              "DocumentMoniker": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Pages\\Register.razor",
+              "RelativeDocumentMoniker": "OnlinePCShop\\Pages\\Register.razor",
+              "ToolTip": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Pages\\Register.razor",
+              "RelativeToolTip": "OnlinePCShop\\Pages\\Register.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-04T13:07:11.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserList.razor",
+              "DocumentMoniker": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Pages\\UserList.razor",
+              "RelativeDocumentMoniker": "OnlinePCShop\\Pages\\UserList.razor",
+              "ToolTip": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Pages\\UserList.razor",
+              "RelativeToolTip": "OnlinePCShop\\Pages\\UserList.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-04T16:53:43.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "OnlinePCShop\\Services\\AuthService.cs",
+              "ToolTip": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Services\\AuthService.cs",
+              "RelativeToolTip": "OnlinePCShop\\Services\\AuthService.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAmwEUAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T12:59:16.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CartService.cs",
+              "DocumentMoniker": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Services\\CartService.cs",
+              "RelativeDocumentMoniker": "OnlinePCShop\\Services\\CartService.cs",
+              "ToolTip": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Services\\CartService.cs",
+              "RelativeToolTip": "OnlinePCShop\\Services\\CartService.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAcwEAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T10:08:22.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "OnlinePCShop\\Services\\OrderService.cs",
+              "ToolTip": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Services\\OrderService.cs",
+              "RelativeToolTip": "OnlinePCShop\\Services\\OrderService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T15:40:44.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "OnlinePCShop\\Services\\ProductService.cs",
+              "ToolTip": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Services\\ProductService.cs",
+              "RelativeToolTip": "OnlinePCShop\\Services\\ProductService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAACbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T11:30:03.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Footer.razor",
+              "DocumentMoniker": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Shared\\Footer.razor",
+              "RelativeDocumentMoniker": "OnlinePCShop\\Shared\\Footer.razor",
+              "ToolTip": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Shared\\Footer.razor",
+              "RelativeToolTip": "OnlinePCShop\\Shared\\Footer.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-05T04:04:34.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Shared\\MainLayout.razor",
+              "RelativeDocumentMoniker": "OnlinePCShop\\Shared\\MainLayout.razor",
+              "ToolTip": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Shared\\MainLayout.razor",
+              "RelativeToolTip": "OnlinePCShop\\Shared\\MainLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-05T04:04:50.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Shared\\NavMenu.razor",
+              "RelativeDocumentMoniker": "OnlinePCShop\\Shared\\NavMenu.razor",
+              "ToolTip": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Shared\\NavMenu.razor",
+              "RelativeToolTip": "OnlinePCShop\\Shared\\NavMenu.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T11:31:54.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Program.cs",
+              "RelativeDocumentMoniker": "OnlinePCShop\\Program.cs",
+              "ToolTip": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Program.cs",
+              "RelativeToolTip": "OnlinePCShop\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T11:30:23.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Login.razor",
+              "DocumentMoniker": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Pages\\Login.razor",
+              "RelativeDocumentMoniker": "OnlinePCShop\\Pages\\Login.razor",
+              "ToolTip": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Pages\\Login.razor",
+              "RelativeToolTip": "OnlinePCShop\\Pages\\Login.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-04T13:07:53.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.razor",
+              "DocumentMoniker": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "OnlinePCShop\\Pages\\Index.razor",
+              "ToolTip": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Pages\\Index.razor",
+              "RelativeToolTip": "OnlinePCShop\\Pages\\Index.razor",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAAAAcAAAB2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T11:31:11.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Checkout.razor",
+              "DocumentMoniker": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Pages\\Checkout.razor",
+              "RelativeDocumentMoniker": "OnlinePCShop\\Pages\\Checkout.razor",
+              "ToolTip": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Pages\\Checkout.razor",
+              "RelativeToolTip": "OnlinePCShop\\Pages\\Checkout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-04T11:15:49.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Cart.razor",
+              "DocumentMoniker": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Pages\\Cart.razor",
+              "RelativeDocumentMoniker": "OnlinePCShop\\Pages\\Cart.razor",
+              "ToolTip": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Pages\\Cart.razor",
+              "RelativeToolTip": "OnlinePCShop\\Pages\\Cart.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAANEAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-04T10:16:04.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AdminLogin.razor",
+              "DocumentMoniker": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Pages\\AdminLogin.razor",
+              "RelativeDocumentMoniker": "OnlinePCShop\\Pages\\AdminLogin.razor",
+              "ToolTip": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Pages\\AdminLogin.razor",
+              "RelativeToolTip": "OnlinePCShop\\Pages\\AdminLogin.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-04T16:10:03.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Admin.razor",
+              "DocumentMoniker": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Pages\\Admin.razor",
+              "RelativeDocumentMoniker": "OnlinePCShop\\Pages\\Admin.razor",
+              "ToolTip": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Pages\\Admin.razor",
+              "RelativeToolTip": "OnlinePCShop\\Pages\\Admin.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFQAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-04T15:41:09.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Account.razor",
+              "DocumentMoniker": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Pages\\Account.razor",
+              "RelativeDocumentMoniker": "OnlinePCShop\\Pages\\Account.razor",
+              "ToolTip": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Pages\\Account.razor",
+              "RelativeToolTip": "OnlinePCShop\\Pages\\Account.razor",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAAAEYAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-04T17:12:16.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Models\\User.cs",
+              "RelativeDocumentMoniker": "OnlinePCShop\\Models\\User.cs",
+              "ToolTip": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Models\\User.cs",
+              "RelativeToolTip": "OnlinePCShop\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T13:06:21.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "OnlinePCShop\\Models\\Product.cs",
+              "ToolTip": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Models\\Product.cs",
+              "RelativeToolTip": "OnlinePCShop\\Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T11:29:13.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "OnlinePCShop\\Models\\Order.cs",
+              "ToolTip": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Models\\Order.cs",
+              "RelativeToolTip": "OnlinePCShop\\Models\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T15:40:15.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Models\\LoginModel.cs",
+              "RelativeDocumentMoniker": "OnlinePCShop\\Models\\LoginModel.cs",
+              "ToolTip": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Models\\LoginModel.cs",
+              "RelativeToolTip": "OnlinePCShop\\Models\\LoginModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T16:57:36.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CustomerInfo.cs",
+              "DocumentMoniker": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Models\\CustomerInfo.cs",
+              "RelativeDocumentMoniker": "OnlinePCShop\\Models\\CustomerInfo.cs",
+              "ToolTip": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Models\\CustomerInfo.cs",
+              "RelativeToolTip": "OnlinePCShop\\Models\\CustomerInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T11:13:49.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AdminLoginModel.cs",
+              "DocumentMoniker": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Models\\AdminLoginModel.cs",
+              "RelativeDocumentMoniker": "OnlinePCShop\\Models\\AdminLoginModel.cs",
+              "ToolTip": "D:\\CODE\\OnlinePCShop\\OnlinePCShop\\Models\\AdminLoginModel.cs",
+              "RelativeToolTip": "OnlinePCShop\\Models\\AdminLoginModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T03:42:48.946Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
